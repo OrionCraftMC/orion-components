@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "io.github.orioncraftmc"
-version = "0.0.1-SNAPSHOT"
+version = "0.0.2-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -55,6 +55,7 @@ publishing {
     publications {
         create<MavenPublication>("maven") {
             from(components["java"])
+            artifact(sourcesJar)
         }
     }
 }

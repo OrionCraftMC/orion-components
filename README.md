@@ -18,7 +18,7 @@ repositories {
 2. Add the dependency to your project
 ````kotlin
 dependencies {
-    implementation("io.github.orioncraftmc:orion-components:0.0.2-SNAPSHOT")
+    implementation("io.github.orioncraftmc:orion-components:0.0.3-SNAPSHOT")
 }
 ````
 3. You're ready to go!

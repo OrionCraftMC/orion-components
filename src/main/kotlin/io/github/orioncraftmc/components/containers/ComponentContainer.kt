@@ -44,6 +44,7 @@ open class ComponentContainer : Component {
 	val components: List<Component> by lazy { Collections.unmodifiableList(componentsList) }
 	protected val componentsList = mutableListOf<Component>()
 
+	override val id: UUID = UUID.randomUUID()
 	override var anchor: Anchor = Anchor.TOP_LEFT
 	final override var padding: Padding = Padding(0.0)
 	override var position: Point = Point()

@@ -40,7 +40,7 @@ enum class Anchor {
 	BOTTOM_RIGHT;
 
 	fun getSideAtTop(): Anchor {
-		val (left, middle, right) = AnchorUtils.extractXInformationFromAnchor(this)
+		val (left, _, right) = AnchorUtils.extractXInformationFromAnchor(this)
 		return if (left) {
 			TOP_LEFT
 		} else if (right) {

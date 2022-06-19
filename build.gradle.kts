@@ -23,10 +23,6 @@ dependencies {
 }
 
 
-tasks.withType<KotlinCompile> {
-    kotlinOptions.jvmTarget = "16"
-}
-
 configure<org.cadixdev.gradle.licenser.LicenseExtension> {
     header(rootProject.file("LICENSE"))
 }

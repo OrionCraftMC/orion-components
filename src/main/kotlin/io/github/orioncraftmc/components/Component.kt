@@ -32,11 +32,17 @@ import io.github.orioncraftmc.components.model.Size
 import io.github.orioncraftmc.components.utils.ComponentUtils
 import io.github.orioncraftmc.components.utils.ComponentUtils.computeEffectiveSize
 import io.github.orioncraftmc.meditate.YogaNode
+import java.util.UUID
 
 /**
  * A UI element that can be rendered on the screen.
  */
 interface Component {
+	/**
+	 * The unique identifier of this component.
+	 */
+	val id: UUID
+
 	/**
 	 * Render the component on the screen.
 	 *

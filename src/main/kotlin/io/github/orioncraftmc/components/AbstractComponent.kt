@@ -30,11 +30,13 @@ import io.github.orioncraftmc.components.model.Padding
 import io.github.orioncraftmc.components.model.Point
 import io.github.orioncraftmc.components.model.Size
 import io.github.orioncraftmc.meditate.YogaNode
+import java.util.*
 
 /**
  * Base abstract class for all components that implement the [Component] interface.
  */
 abstract class AbstractComponent(
+	override val id: UUID = UUID.randomUUID(),
 	override var anchor: Anchor = Anchor.TOP_LEFT,
 	override var position: Point = Point(),
 	override var size: Size = Size(),
